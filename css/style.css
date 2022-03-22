@@ -6,27 +6,33 @@
 html{
     scroll-behavior: smooth;
 }
-.container{
-    max-width: 800px;
-    max-height: 100px;
-    vertical-align: right;
+header{
+    background-color: transparent;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .main-nav{
-    vertical-align: middle;
+    display:block;
+    margin-top: 15px;
+    text-align: right;
 }
-main.nav,.main-nav ul li a{
-    display: inline-block;
-    position: relative;
-    background-color: white;
+.main-nav ul li {
+display: inline-block;
+}
+.main-nav ul li a{
     text-decoration: none;
-
-}
-header{
-    width: 100%;
+    color: black;
+    background-color: white;
+    padding: 10px 16px;
+    border-radius: 50%;
+    margin-right: 15px;
 }
 section{
     position: relative;
-    height: 10vh;
+    height: 100vh;
 }
 
 #scarpa1{
@@ -41,16 +47,25 @@ section{
 }
 .box{
     position: absolute;
-    top: 10%;
-    left: 25%;
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+
+}
+.box h1{
+    text-align: center;
+    font-size: 45px;
+
 }
 .text1{
-    margin-left: 200px;
     color: yellow;
-    font-size: 30px;
 }
 .text2{
-    margin-left:200px ;
+
     color: green;
-    font-size: 30px;
+}
+.box img{
+    height: 350px;
 }
